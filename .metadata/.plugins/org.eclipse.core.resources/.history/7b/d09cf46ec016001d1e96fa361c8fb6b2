@@ -1,0 +1,36 @@
+package day0805;
+
+import java.util.Scanner;
+
+public class B1110 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int num = s.nextInt();
+		if (!(num>=0 && num<=99))
+			return;
+		int[] a = new int[2];
+		int tmp;
+		int original = num, f=0;
+		while(true){
+			if(f == 0){
+				a[0] = num / 10;
+				a[1] = num % 10;
+				System.out.println("a[0]="+a[0]);
+			} else{
+				a[0] = a[1];
+				a[1] = num % 10;
+			}
+
+			num = a[0] + a[1];
+			System.out.println("num : " + num);
+			f += 1;
+			
+			if(num == original){
+				System.out.println(f);
+				break;
+			}
+		}
+	}
+
+}

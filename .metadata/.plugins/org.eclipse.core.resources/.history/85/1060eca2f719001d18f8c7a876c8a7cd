@@ -1,0 +1,15 @@
+package day0811;
+
+import java.util.Scanner;
+
+public class B1541 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		String str = s.nextLine();
+		int plus = str.indexOf("+");
+		int minus = str.indexOf("-");
+		System.out.println("plus : " + plus + "minus : " + minus);
+	}
+
+}

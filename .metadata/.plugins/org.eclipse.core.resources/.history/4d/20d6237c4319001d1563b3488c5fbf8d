@@ -1,0 +1,38 @@
+package day0811;
+
+import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class B10828 {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = 0;
+		try {
+			n = Integer.parseInt(br.readLine());
+		} catch (NumberFormatException | IOException e) {
+			e.printStackTrace();
+		}
+		for(int i =0; i<n; i++) {
+			StringTokenizer st = null;
+			String cmd = null;
+			int num = 0;
+			try {
+				st = new StringTokenizer(br.readLine());
+				cmd = st.nextToken();
+				if(st.hasMoreTokens())
+					num =Integer.parseInt(st.nextToken());
+				System.out.println("cmd : " + cmd + "num : " + num);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		
+	}
+
+}

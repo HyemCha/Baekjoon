@@ -1,0 +1,38 @@
+package day0810;
+
+public class B1010 {
+
+	public static double combi(int n, int m) {
+		
+		//m!
+		int mm = m;
+		for(int i=m; i>1; i--) {
+			mm = mm*(m-1);
+		}
+		System.out.println("mm : " + mm);
+		
+		//n!
+		int nn = 1;
+		for(int i=1; i<=n; i++) {
+			nn *= i;
+		}
+		System.out.println("nn : " + nn);
+		
+		//(m-n)!
+		int mn=1;
+		for(int i=1; i<=(m-n); i++) {
+			mn *= i;
+		}
+		System.out.println("mn : " + mn);
+		
+		return mm/(nn*mn);
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(combi(13,29));
+		
+	}
+	
+	
+
+}
