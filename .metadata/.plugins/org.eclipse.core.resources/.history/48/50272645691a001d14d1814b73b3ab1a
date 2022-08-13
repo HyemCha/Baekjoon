@@ -1,0 +1,98 @@
+package day0812;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class B1991_BinaryTree {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int t = Integer.parseInt(br.readLine());
+		
+		
+		LinkedBinaryTree lbt = new LinkedBinaryTree();
+		for(int i=0; i<t; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			String data = st.nextToken();
+			System.out.println(data);
+			lbt.makeBinaryTree(data, st.nextToken(), st.nextToken());
+			System.out.print(1);
+		}
+		
+		lbt.PreOrder(lbt.root);
+		System.out.println();
+		lbt.InOrder(lbt.root);
+		System.out.println();
+		lbt.PostOrder(lbt.root);
+		
+	}
+
+}
+
+class Node{
+	String data;
+	Node left;
+	Node right;
+	
+	public Node(String data) {
+		this.data = data;
+	}
+}
+
+class LinkedBinaryTree{
+	Node root;
+	public void makeBinaryTree(String data, String left, String right) {
+		if(root == null) {
+			if(data!=".") root = new Node(data);
+			if(left!=".") root.left = new Node(left);
+			if(right!=".") root.right = new Node(right);
+		}else {
+			search(root, data, left,right);
+		}
+		
+		
+	}
+	
+	
+	void search(Node root, String data, String left, String right) {
+		if(root == null) 
+			return;
+		if(root.data == data) {
+			if(left!=".")
+				root.left = new Node(left);
+			if(right!=".")
+				root.right = new Node(right);
+		}else {
+			search(root.left,data,left,right);
+			search(root.right,data,left,right);
+		}
+	}
+	
+	public void visit(String data) {
+//		if(data != null)
+			System.out.print(data);
+	}
+	
+	//전위 순회 (PreOrder Traversal)
+	public void PreOrder(Node node) {
+		visit(node.data);
+		if(node.left!=null) PreOrder(node.left);
+		if(node.right!=null) PreOrder(node.right);
+	}
+	
+	//중위 순회 (InOrder Traversal)
+	public void InOrder(Node node) {
+		if(node.left!=null) InOrder(node.left);
+		visit(node.data);
+		if(node.right!=null) InOrder(node.right);
+	}
+	
+	//후위 순회 (PostOrder Traversal)
+	public void PostOrder(Node node) {
+		if(node.left!=null) PostOrder(node.left);
+		if(node.right!=null) PostOrder(node.right);
+		visit(node.data);
+	}
+}
