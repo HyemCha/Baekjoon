@@ -14,5 +14,6 @@
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="day0812.LinkedBinaryTree"/>
+    <fullyQualifiedTypeName name="java.io.StringReader"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
 </qualifiedTypeNameHistroy>

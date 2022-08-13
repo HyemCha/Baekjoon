@@ -9,6 +9,6 @@ public class B1152 {
 		Scanner s = new Scanner(System.in);
 		String str = s.nextLine();
 		StringTokenizer st = new StringTokenizer(str);
-		System.out.println(st.countTokens());
+		System.out.println(st);
 	}
 }
