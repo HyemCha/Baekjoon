@@ -1,0 +1,49 @@
+package day0817;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+
+public class B16953 {
+
+	public static void main(String[] args) throws IOException {
+		long start = System.nanoTime();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		long end;
+		int cnt = 0;
+		while(true) {
+			if(a==b) {
+				bw.append(Integer.toString(++cnt));
+				bw.flush();
+				bw.close();
+				end = System.nanoTime();
+				System.out.println("수행시간: " + (end - start) + " ns");
+				break;
+			}
+			if(b<a) {
+				bw.append("-1");
+				end = System.nanoTime();
+				System.out.println("수행시간: " + (end - start) + " ns");
+				bw.flush();
+				bw.close();
+				break;
+			}
+			
+			if(b%2 == 0) {
+				b /= 2;
+			} else if(b%10 == 1) {
+				b /=10;
+			} 
+			cnt++;
+		}
+	}
+
+}

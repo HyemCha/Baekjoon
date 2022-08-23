@@ -1,0 +1,53 @@
+package day0817;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.StringTokenizer;
+
+public class B16953 {
+
+	public static void main(String[] args) throws IOException {
+		Instant start = Instant.now();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int cnt = 0;
+		while(true) {
+			if(a==b) {
+				bw.append(Integer.toString(++cnt));
+				Instant end = Instant.now();
+				System.out.println("수행시간: " + Duration.between(start, end).toMillis() + " ms");
+				bw.flush();
+				bw.close();
+				break;
+			}
+			
+			if(b%2 == 0) {
+				b /= 2;
+			} else if(b%10 == 1) {
+				b /=10;
+			} else {
+				System.out.println("b%a == b" + b%a );
+				Instant end = Instant.now();
+				System.out.println("수행시간: " + Duration.between(start, end).toMillis() + " ms");
+				bw.append("-1");
+				bw.flush();
+				bw.close();
+				break;
+			} 
+			
+			
+//			System.out.println("b : " + b);
+			cnt++;
+		}
+	}
+
+}

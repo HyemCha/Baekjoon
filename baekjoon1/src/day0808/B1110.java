@@ -7,8 +7,10 @@ public class B1110 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int num = s.nextInt();
-		if (!(num>=0 && num<=99))
+		if (!(num>=0 && num<=99)){
+			s.close();
 			return;
+		}
 		int[] a = new int[2];
 		int original = num, f=0;
 		int newNum;
@@ -29,6 +31,7 @@ public class B1110 {
 				break;
 			}
 		}
+		s.close();
 	}
 
 }
