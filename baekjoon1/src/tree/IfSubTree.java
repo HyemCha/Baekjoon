@@ -1,4 +1,4 @@
-package graph;
+package tree;
 
 class Tree8 {
     class Node {

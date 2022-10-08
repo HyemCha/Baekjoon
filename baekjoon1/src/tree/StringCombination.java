@@ -1,4 +1,4 @@
-package graph;
+package tree;
 
 public class StringCombination{
     public static final int C = 26;

@@ -120,7 +120,7 @@
 &lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-authorization-server/releases/tag/1.0.0-M1"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html"&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href="https://github.com/spring-projects/spring-authorization-server/graph/main/samples"&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
+&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html"&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href="https://github.com/spring-projects/spring-authorization-server/tree/main/samples"&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this release.&lt;/p&gt;
@@ -154,7 +154,7 @@
 &lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-authorization-server/releases/tag/0.4.0-M1"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html"&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href="https://github.com/spring-projects/spring-authorization-server/graph/0.4.x/samples"&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
+&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html"&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href="https://github.com/spring-projects/spring-authorization-server/tree/0.4.x/samples"&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this release.&lt;/p&gt;
@@ -234,7 +234,7 @@
 &lt;p&gt;We are planning to add more features and capabilities to this framework soon. We welcome any collaboration from the community in the form of bug reports, feature requests, pull requests, and other types of feedback. &lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-for-apache-pulsar-resources" class="anchor" name="spring-for-apache-pulsar-resources"&gt;&lt;/a&gt;Spring for Apache Pulsar Resources&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-pulsar"&gt;Spring for Apache Pulsar GitHub repository&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://docs.spring.io/spring-pulsar/docs/current-SNAPSHOT/reference/html/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-pulsar/graph/main/spring-pulsar-sample-apps"&gt;Sample Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-pulsar/tree/main/spring-pulsar-sample-apps"&gt;Sample Applications&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
@@ -247,7 +247,7 @@
     <id>tag:spring.io,2022-08-16:4880</id>
     <updated>2022-08-16T07:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another wonder-filled installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s been a week! Sometimes I can scarcely believe it myself. And can you believe it&amp;rsquo;s August 16th already?? My daughter&amp;rsquo;s starting school this week! We&amp;rsquo;re in the northern hemisphere, and Summer break is already over and done with for her. There&amp;rsquo;s still another month and some change of summer, officially, though. So, I hope you all are doing whatever you can to maximize your enjoyment of it before the darker and colder months arrive. &lt;/p&gt;
-&lt;p&gt;Twitter helps me pass the time. I&amp;rsquo;ve been working on some code and wanted to use Twitter&amp;rsquo;s OAuth 2 and PKCE support in the application but couldn&amp;rsquo;t quite make it work. So I pinged my pal (everybody&amp;rsquo;s pal, really!) and Spring Security &lt;a href="https://twitter.com/rob_winch"&gt;lead Rob Winch (&lt;code&gt;@rob_winch&lt;/code&gt;)&lt;/a&gt; for some clues, and he did me one better: he put together a sample that &lt;a href="https://github.com/rwinch/spring-security-sample/graph/twitter-oauth"&gt;demonstrates it all in action&lt;/a&gt;! Thanks, Rob! I love Spring Security and a huge reason is because of the amazing and helpful and indulgent team behind it. And I love Twitter (most of the time, anyway). &lt;/p&gt;
+&lt;p&gt;Twitter helps me pass the time. I&amp;rsquo;ve been working on some code and wanted to use Twitter&amp;rsquo;s OAuth 2 and PKCE support in the application but couldn&amp;rsquo;t quite make it work. So I pinged my pal (everybody&amp;rsquo;s pal, really!) and Spring Security &lt;a href="https://twitter.com/rob_winch"&gt;lead Rob Winch (&lt;code&gt;@rob_winch&lt;/code&gt;)&lt;/a&gt; for some clues, and he did me one better: he put together a sample that &lt;a href="https://github.com/rwinch/spring-security-sample/tree/twitter-oauth"&gt;demonstrates it all in action&lt;/a&gt;! Thanks, Rob! I love Spring Security and a huge reason is because of the amazing and helpful and indulgent team behind it. And I love Twitter (most of the time, anyway). &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s been a busy week on Twitter for me! On it, &lt;a href="https://twitter.com/starbuxman/status/1559340838227812352?s=21&amp;t=3Yx_5Cek8syZnby6q58Fjw"&gt;I asked what people are using for their observability stacks on Kubernetes&lt;/a&gt;, figured out that &lt;a href="https://twitter.com/starbuxman/status/1559090990182322177?s=21&amp;t=3Yx_5Cek8syZnby6q58Fjw"&gt;for my 25+ years in writing software, I don&amp;rsquo;t know &lt;em&gt;anything&lt;/em&gt;&lt;/a&gt;, and so much more! And here, you silly reader you, you&amp;rsquo;ve probably been happy being all productive in your off-Twitter life, haven&amp;rsquo;t ya? Well, let me tell you: you&amp;rsquo;re missing out!&lt;/p&gt;
 &lt;p&gt;Or, and I can&amp;rsquo;t stress this enough, you&amp;rsquo;re &lt;em&gt;probably&lt;/em&gt; not. That&amp;rsquo;s probably true, too. So, carry on.&lt;/p&gt;
 &lt;p&gt;And we &lt;em&gt;shall&lt;/em&gt; carry on, too. After all, we&amp;rsquo;ve got one heckuva roundup this week! So, without further ado&amp;hellip;&lt;/p&gt;

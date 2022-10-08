@@ -1,4 +1,4 @@
-package graph;
+package tree;
 
 class Node{
 	int data;
