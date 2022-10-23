@@ -66,6 +66,5 @@ public class B1012 {
                     DFS(ny, nx);
                 }
             }
-        }
-    }
+        }    }
 }
