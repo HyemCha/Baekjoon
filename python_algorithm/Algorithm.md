@@ -87,3 +87,37 @@ for i in range(1, len(data)):
     result *= num
 
 print(result)
+
+import sys
+
+# 내 풀이
+n = int(sys.stdin.readline())
+scare = list(map(int, sys.stdin.readline().split()))
+scare.sort(reverse=True)
+cnt = 0
+
+while True:
+  if len(scare) <= 1:
+    break
+  num = scare[0]
+  scare = scare[num:]
+  cnt += 1
+
+# output
+print(cnt)
+
+# 답
+n = int(input())
+data = list(map(int, input().split()))
+data.sort()
+
+result = 0 # 총 그룹의 수
+count = 0 # 현재 그룹에 포함된 모험가의 수
+
+for i in data: # 공포도를 낮은 것부터 하나씩 확인하며
+  count += 1 # 현재 그룹에 해당 모험가를 포함
+  if count >= i: # 현재 그룹에 포함된 모험가의 수가 현재의 공포도 이상이라면
+    result += 1 # 총 그룹의 수 증가
+    count = 0 # 현재 그룹에 포함된 모험가의 수 초기화
+
+print(result) # 총 그룹의 수 출력
