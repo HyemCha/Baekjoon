@@ -21,6 +21,7 @@ while True:
   i+=1
   print(f'Case {i}: {result}')```
 
+
 ```import sys
 # 내 풀이
 # input
