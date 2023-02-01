@@ -17,7 +17,7 @@ def bfs(x, y):
       graph[nx][ny] = graph[x][y] + 1
       queue.append((nx, ny))
 
-  print(graph[n - 1][m - 1])
+  return graph[n - 1][m - 1]
 
 n, m = map(int, sys.stdin.readline().split())
 
@@ -29,4 +29,4 @@ dy = [-1, 1, 0, 0]
 for _ in range(n):
   graph.append(list(map(int, sys.stdin.readline().replace('\n', ''))))
 
-bfs(0, 0)
+print (bfs(0, 0))
