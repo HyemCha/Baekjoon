@@ -1,7 +1,7 @@
 import sys
 
 def dfs(x, y, l):
-  if x < 0 or x >= m or y < 0 or y >= n:
+  if x < 0 or x >= m or y < 0 or y >= n: # 좌표(인덱스) 구분 잘하기
     return 0
   if l == 1:
     if ton[x][y] == 1:
